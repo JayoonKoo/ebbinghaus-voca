@@ -1,8 +1,10 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
+import Header from './component/Header';
 
 function App() {
   return (
 		<BrowserRouter>
+			<Header />
 			<Switch>
 				<Route exact path="/">
 					<h1>메인 페이지 입니다.</h1>
