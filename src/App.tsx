@@ -1,4 +1,5 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
+import DayList from './component/DayList';
 import Header from './component/Header';
 
 function App() {
@@ -7,13 +8,16 @@ function App() {
 			<Header />
 			<Switch>
 				<Route exact path="/">
-					<h1>메인 페이지 입니다.</h1>
+					<DayList />
 				</Route>
-				<Route path="/words">
+				<Route path="/words/:day">
 					<h1>단어 페이지 입니다.</h1>
 				</Route>
-				<Route path="/create_word">
+				<Route path="/create_word/:day?">
 					<h1>단어 생성 페이지입니다.</h1>
+				</Route>
+				<Route path="/create_day">
+					<h1>날짜 생성 페이지입니다.</h1>
 				</Route>
 				<Route>
 					<h1>잘못된 url 입니다.</h1>
