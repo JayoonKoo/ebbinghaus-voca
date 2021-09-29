@@ -1,5 +1,5 @@
-import {IDay, IWord} from '../types'
-import useFetch from '../hooks/useFetch';
+import {IDay, IWord} from 'types'
+import useFetch from 'hooks/useFetch';
 import { Link } from 'react-router-dom';
 
 export default function DayList() {

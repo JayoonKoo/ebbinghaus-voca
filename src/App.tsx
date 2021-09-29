@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
-import DayList from './component/DayList';
-import Header from './component/Header';
+import DayList from 'component/DayList';
+import Header from 'component/Header';
+import WordList from 'component/WordList';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
 					<DayList />
 				</Route>
 				<Route path="/words/:day">
-					<h1>단어 페이지 입니다.</h1>
+					<WordList />
 				</Route>
 				<Route path="/create_word/:day?">
 					<h1>단어 생성 페이지입니다.</h1>
