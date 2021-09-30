@@ -62,6 +62,41 @@
       "kor": "닫다",
       "isDone": false,
       "id": 10
+    },
+    {
+      "day": "1",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": 1,
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": 1,
+      "eng": "phone",
+      "kor": "핸드폰",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": 3,
+      "eng": "hello",
+      "kor": "안녕 ",
+      "isDone": false,
+      "id": 14
+    },
+    {
+      "day": 1,
+      "eng": "get",
+      "kor": "얻다",
+      "isDone": false,
+      "id": 15
     }
   ]
 }

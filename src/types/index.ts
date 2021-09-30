@@ -1,7 +1,6 @@
 export interface IDay {
   id: number;
   day: number;
-  isDone: boolean;
 }
 
 export interface IWord {
