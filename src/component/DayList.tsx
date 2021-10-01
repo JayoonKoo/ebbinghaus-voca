@@ -5,7 +5,16 @@ import { Link } from 'react-router-dom';
 export default function DayList() {
 	const url = `http://localhost:3001/days`;
 	const [days, setDays] = useFetch<IDay>(url);
+	const {day: lastDay} = days.reduce((prev, current) => {
+		if (prev.day < current.day) return current;
+		return prev;
+	}, {day: 0, id: 0} as IDay)
 
+	const fetchWords = () => {
+		fetch(url)
+			.then(res => res.json())
+			.then(days => setDays(days));
+	}
 
 	async function del(e: React.MouseEvent, date: IDay ) {
 		const {id, day} = date;
@@ -32,7 +41,24 @@ export default function DayList() {
 		}
 	}
 
+	const createDay = () => {
+		fetch(url, {
+			method: "POST",
+			headers: {
+				"Content-Type" : "application/json"
+			},
+			body: JSON.stringify({
+				day: lastDay + 1,
+			})
+		})
+			.then(res => {
+				if (res.ok) {
+					fetchWords();
+				}
+			})
+	}
 	return (
+		<>
 		<ul className="day-list">
 			{days.map(day => (
 				<li 
@@ -45,10 +71,12 @@ export default function DayList() {
 						<Link to={`/create_word/${day.day}`}>
 							<button>추가하기</button>
 						</Link>
-						<button onClick={(e) => del(e, day)}>삭제하기</button>
+						<button onClick={(e) => del(e, day)}>외움표시</button>
 					</div>
 				</li>
 			))}
 		</ul>
+		<button onClick={createDay}>추가하기</button>
+		</>
 	)
 }

@@ -18,9 +18,6 @@ function App() {
 				<Route path="/create_word/:day?">
 					<CreateWord />
 				</Route>
-				<Route path="/create_day">
-					<h1>날짜 생성 페이지입니다.</h1>
-				</Route>
 				<Route>
 					<h1>잘못된 url 입니다.</h1>
 				</Route>

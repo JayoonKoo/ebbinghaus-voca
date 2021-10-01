@@ -59,7 +59,7 @@ const CreateWord = ({onSubmitWord}: IProps) => {
   return (
     <>
       <form onSubmit={onSubmit}>
-        {day === undefined ? (
+        {typeof w === "undefined"? (
           <select value={day} onChange={onSelectChange}>
             {days.map((mday) => (
               <option key={mday.id} value={mday.day}>
