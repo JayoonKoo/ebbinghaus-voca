@@ -1,10 +1,15 @@
 import useFetch from "hooks/useFetch";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import { IDay } from "types";
 
-const CreateWord = () => {
-  const { day } = useParams<{ day: string | undefined }>();
+interface IProps {
+	onSubmitWord?(): void;
+}
+
+const CreateWord = ({onSubmitWord}: IProps) => {
+  const { day: w } = useParams<{ day: string | undefined }>();
+	const [day, setDay] = useState(w? w: "1");
   const [eng, setEng] = useState("");
   const [kor, setKor] = useState("");
   const dayUrl = `http://localhost:3001/days`;
@@ -13,15 +18,6 @@ const CreateWord = () => {
 
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    let formDay: string;
-    if (typeof day === "string") {
-      formDay = day;
-    } else if (dRef.current) {
-      formDay = dRef.current.value;
-    } else {
-      console.log("날짜를 설정해야 합니다.");
-      return;
-    }
 
 		fetch(`${wordUrl}`, {
 			method: "POST",
@@ -29,7 +25,7 @@ const CreateWord = () => {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-				day: Number(formDay),
+				day: Number(day),
 				eng,
 				kor,
 				isDone: false,
@@ -38,11 +34,13 @@ const CreateWord = () => {
 			if (res.ok) {
 				setEng("");
 				setKor("");
+				if (typeof onSubmitWord === "function") {
+					onSubmitWord();
+				}
 			}
 		});
-  }
 
-  const dRef = useRef<HTMLSelectElement>(null);
+  }
 
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const {target: {name, value}} = event;
@@ -53,14 +51,19 @@ const CreateWord = () => {
 		}
 	};
 
+	const onSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+		const {target: {value: day}} = event;
+		setDay(day);
+	}
+
   return (
     <>
       <form onSubmit={onSubmit}>
         {day === undefined ? (
-          <select ref={dRef}>
+          <select value={day} onChange={onSelectChange}>
             {days.map((mday) => (
               <option key={mday.id} value={mday.day}>
-                {mday.day}
+								{mday.day}
               </option>
             ))}
           </select>
