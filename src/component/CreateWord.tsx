@@ -8,13 +8,10 @@ interface IProps {
 }
 
 const CreateWord = ({onSubmitWord}: IProps) => {
-  const { day: w } = useParams<{ day: string | undefined }>();
-	const [day, setDay] = useState(w? w: "1");
+  const { day } = useParams<{ day: string | undefined }>();
   const [eng, setEng] = useState("");
   const [kor, setKor] = useState("");
-  const dayUrl = `http://localhost:3001/days`;
   const wordUrl = `http://localhost:3001/words`;
-  const [days] = useFetch<IDay>(dayUrl);
 
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -52,24 +49,11 @@ const CreateWord = ({onSubmitWord}: IProps) => {
 	};
 
 
-	const onSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		const {target: {value: day}} = event;
-		setDay(day);
-	}
 
   return (
     <>
 
       <form onSubmit={onSubmit}>
-        {typeof w === "undefined"? (
-          <select value={day} onChange={onSelectChange}>
-            {days.map((mday) => (
-              <option key={mday.id} value={mday.day}>
-								{mday.day}
-              </option>
-            ))}
-          </select>
-        ) : null}
         <input
           name="eng"
           value={eng}
