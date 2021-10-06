@@ -68,15 +68,12 @@ export default function DayList() {
 						<span>{day.day}Day</span>
 					</Link>
 					<div className="day_list__btn">
-						<Link to={`/create_word/${day.day}`}>
-							<button>추가하기</button>
-						</Link>
 						<button onClick={(e) => del(e, day)}>외움표시</button>
 					</div>
 				</li>
 			))}
 		</ul>
-		<button onClick={createDay}>추가하기</button>
+		<button onClick={createDay}>Day 추가하기</button>
 		</>
 	)
 }

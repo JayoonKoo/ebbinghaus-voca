@@ -14,13 +14,6 @@ export default function Header() {
 						단어 추가하기
 					</Link>
 				</li>
-				<li>
-					<Link 
-						to="/create_day"
-						className="header__create-day">
-						Day 추가하기
-					</Link>
-				</li>
 			</ul>
 		</header>
 	)

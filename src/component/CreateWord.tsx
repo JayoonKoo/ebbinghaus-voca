@@ -51,6 +51,7 @@ const CreateWord = ({onSubmitWord}: IProps) => {
 		}
 	};
 
+
 	const onSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		const {target: {value: day}} = event;
 		setDay(day);
@@ -58,6 +59,7 @@ const CreateWord = ({onSubmitWord}: IProps) => {
 
   return (
     <>
+
       <form onSubmit={onSubmit}>
         {typeof w === "undefined"? (
           <select value={day} onChange={onSelectChange}>

@@ -43,6 +43,22 @@
     {
       "day": 11,
       "id": 11
+    },
+    {
+      "day": 12,
+      "id": 12
+    },
+    {
+      "day": 13,
+      "id": 13
+    },
+    {
+      "day": 14,
+      "id": 14
+    },
+    {
+      "day": 15,
+      "id": 15
     }
   ],
   "words": [
@@ -131,20 +147,6 @@
       "id": 18
     },
     {
-      "day": 1,
-      "eng": "when",
-      "kor": "언제",
-      "isDone": false,
-      "id": 19
-    },
-    {
-      "day": 1,
-      "eng": "house",
-      "kor": "wㅣㅂ",
-      "isDone": false,
-      "id": 20
-    },
-    {
       "day": 2,
       "eng": "house",
       "kor": "집",
@@ -194,13 +196,6 @@
       "id": 32
     },
     {
-      "day": 1,
-      "eng": "we",
-      "kor": "우리",
-      "isDone": false,
-      "id": 33
-    },
-    {
       "day": 7,
       "eng": "house",
       "kor": "집",
@@ -213,6 +208,34 @@
       "kor": "개",
       "isDone": false,
       "id": 35
+    },
+    {
+      "day": 11,
+      "eng": "google",
+      "kor": "구글",
+      "isDone": false,
+      "id": 36
+    },
+    {
+      "day": 1,
+      "eng": "google",
+      "kor": "구글",
+      "isDone": false,
+      "id": 37
+    },
+    {
+      "day": 3,
+      "eng": "google",
+      "kor": "구글",
+      "isDone": false,
+      "id": 38
+    },
+    {
+      "day": 10,
+      "eng": "google",
+      "kor": "구글",
+      "isDone": false,
+      "id": 39
     }
   ]
 }
