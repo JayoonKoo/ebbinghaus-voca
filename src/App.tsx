@@ -3,6 +3,7 @@ import DayList from 'component/DayList';
 import Header from 'component/Header';
 import WordList from 'component/WordList';
 import CreateWord from 'component/CreateWord';
+import CreateWordList from 'component/CreateWordList';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
 				<Route path="/words/:day">
 					<WordList />
 				</Route>
-				<Route path="/create_word/:day?">
-					<CreateWord />
+				<Route path="/create_word">
+					<CreateWordList />
 				</Route>
 				<Route>
 					<h1>잘못된 url 입니다.</h1>
