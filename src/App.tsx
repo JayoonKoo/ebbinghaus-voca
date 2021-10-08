@@ -2,7 +2,6 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom'
 import DayList from 'component/DayList';
 import Header from 'component/Header';
 import WordList from 'component/WordList';
-import CreateWord from 'component/CreateWord';
 import CreateWordList from 'component/CreateWordList';
 
 function App() {

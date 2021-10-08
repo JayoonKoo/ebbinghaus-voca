@@ -1,7 +1,5 @@
-import useFetch from "hooks/useFetch";
 import React, { useState } from "react";
 import { useParams } from "react-router";
-import { IDay } from "types";
 
 interface IProps {
 	onSubmitWord?(): void;
