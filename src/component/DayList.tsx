@@ -64,7 +64,7 @@ export default function DayList() {
 				<li 
 					key={day.id} 
 					className="day-list__item">
-					<Link className="day-list__item--link" to={`/words/${day.day}`}>
+					<Link className="day-list__item--link " to={`/words/${day.day}`}>
 						<span>{day.day}Day</span>
 					</Link>
 				</li>

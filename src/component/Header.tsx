@@ -10,7 +10,7 @@ export default function Header() {
 				<li>
 					<Link 
 						to="/create_word"
-						className="header__create-word">
+						className="header__create-word btn">
 						단어 추가하기
 					</Link>
 				</li>

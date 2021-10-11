@@ -35,6 +35,10 @@
     {
       "day": 9,
       "id": 9
+    },
+    {
+      "day": 10,
+      "id": 10
     }
   ],
   "words": [
@@ -43,7 +47,49 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": false
+      "isDone": true
+    },
+    {
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "day": 1,
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "day": 1,
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 4
+    },
+    {
+      "day": 1,
+      "eng": "window",
+      "kor": "단어",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "day": 1,
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": 4,
+      "eng": "two ",
+      "kor": "둘",
+      "isDone": false,
+      "id": 7
     }
   ]
 }

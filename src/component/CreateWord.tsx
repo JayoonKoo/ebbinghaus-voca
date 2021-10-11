@@ -51,7 +51,7 @@ const CreateWord = ({onSubmitWord}: IProps) => {
   return (
     <>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="create-form">
         <input
           name="eng"
           value={eng}
@@ -59,6 +59,7 @@ const CreateWord = ({onSubmitWord}: IProps) => {
           type="text"
           placeholder="영어 입력"
           required={true}
+					className="input-eng input"
         />
         <input
 					name="kor"
@@ -67,8 +68,9 @@ const CreateWord = ({onSubmitWord}: IProps) => {
           type="text"
           placeholder="한글 입력"
           required={true}
+					className="input-kor input"
         />
-        <input type="submit" value="생성" />
+        <input type="submit" value="생성" className="submit-btn btn"/>
       </form>
     </>
   );
