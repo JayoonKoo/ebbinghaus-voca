@@ -5,12 +5,12 @@
       "day": 1
     },
     {
-      "id": 2,
-      "day": 2
+      "day": 2,
+      "id": 2
     },
     {
-      "id": 3,
-      "day": 3
+      "day": 3,
+      "id": 3
     },
     {
       "day": 4,
@@ -39,26 +39,6 @@
     {
       "day": 10,
       "id": 10
-    },
-    {
-      "day": 11,
-      "id": 11
-    },
-    {
-      "day": 12,
-      "id": 12
-    },
-    {
-      "day": 13,
-      "id": 13
-    },
-    {
-      "day": 14,
-      "id": 14
-    },
-    {
-      "day": 15,
-      "id": 15
     }
   ],
   "words": [
@@ -67,224 +47,49 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": false
-    },
-    {
-      "id": 3,
-      "day": 2,
-      "eng": "car",
-      "kor": "차",
       "isDone": true
     },
     {
-      "id": 4,
-      "day": 2,
-      "eng": "pen",
-      "kor": "팬",
-      "isDone": true
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "day": 1,
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 3
     },
     {
       "day": 1,
       "eng": "window",
       "kor": "창문",
       "isDone": false,
-      "id": 6
+      "id": 4
     },
     {
-      "day": 2,
-      "eng": "mouse",
-      "kor": "쥐",
+      "day": 1,
+      "eng": "window",
+      "kor": "단어",
       "isDone": false,
-      "id": 7
+      "id": 5
     },
     {
-      "day": "1",
+      "day": 1,
       "eng": "monkey",
       "kor": "원숭이",
       "isDone": false,
-      "id": 11
+      "id": 6
     },
     {
-      "day": 1,
-      "eng": "mouse",
-      "kor": "쥐",
+      "day": 4,
+      "eng": "two ",
+      "kor": "둘",
       "isDone": false,
-      "id": 12
-    },
-    {
-      "day": 1,
-      "eng": "phone",
-      "kor": "핸드폰",
-      "isDone": false,
-      "id": 13
-    },
-    {
-      "day": 1,
-      "eng": "get",
-      "kor": "얻다",
-      "isDone": false,
-      "id": 15
-    },
-    {
-      "day": 1,
-      "eng": "youtube",
-      "kor": "유튜브",
-      "isDone": false,
-      "id": 16
-    },
-    {
-      "day": 1,
-      "eng": "key",
-      "kor": "키",
-      "isDone": false,
-      "id": 17
-    },
-    {
-      "day": 1,
-      "eng": "where",
-      "kor": "어디에",
-      "isDone": false,
-      "id": 18
-    },
-    {
-      "day": 2,
-      "eng": "house",
-      "kor": "집",
-      "isDone": false,
-      "id": 21
-    },
-    {
-      "day": 2,
-      "eng": "why",
-      "kor": "왜",
-      "isDone": false,
-      "id": 22
-    },
-    {
-      "day": 2,
-      "eng": "go",
-      "kor": "가다",
-      "isDone": false,
-      "id": 27
-    },
-    {
-      "day": 2,
-      "eng": "eye",
-      "kor": "눈",
-      "isDone": false,
-      "id": 28
-    },
-    {
-      "day": 2,
-      "eng": "sun",
-      "kor": "태양",
-      "isDone": false,
-      "id": 29
-    },
-    {
-      "day": 2,
-      "eng": "good",
-      "kor": "좋다",
-      "isDone": false,
-      "id": 30
-    },
-    {
-      "day": 3,
-      "eng": "when",
-      "kor": "언제",
-      "isDone": true,
-      "id": 32
-    },
-    {
-      "day": 7,
-      "eng": "house",
-      "kor": "집",
-      "isDone": false,
-      "id": 34
-    },
-    {
-      "day": 6,
-      "eng": "dog",
-      "kor": "개",
-      "isDone": false,
-      "id": 35
-    },
-    {
-      "day": 11,
-      "eng": "google",
-      "kor": "구글",
-      "isDone": false,
-      "id": 36
-    },
-    {
-      "day": 1,
-      "eng": "google",
-      "kor": "구글",
-      "isDone": false,
-      "id": 37
-    },
-    {
-      "day": 3,
-      "eng": "google",
-      "kor": "구글",
-      "isDone": false,
-      "id": 38
-    },
-    {
-      "day": 10,
-      "eng": "google",
-      "kor": "구글",
-      "isDone": false,
-      "id": 39
-    },
-    {
-      "day": 1,
-      "eng": "asdf",
-      "kor": "asdf",
-      "isDone": false,
-      "id": 40
-    },
-    {
-      "day": 2,
-      "eng": "asdf",
-      "kor": "asdf",
-      "isDone": false,
-      "id": 41
-    },
-    {
-      "day": 14,
-      "eng": "asdf",
-      "kor": "asdf",
-      "isDone": false,
-      "id": 42
-    },
-    {
-      "day": 15,
-      "eng": "asdf",
-      "kor": "asdf",
-      "isDone": false,
-      "id": 43
-    },
-    {
-      "day": 10,
-      "eng": "asdf",
-      "kor": "aasdf",
-      "isDone": false,
-      "id": 44
-    },
-    {
-      "day": 11,
-      "eng": "zxcv",
-      "kor": "zxcv",
-      "isDone": false,
-      "id": 45
-    },
-    {
-      "day": 12,
-      "eng": "qwer",
-      "kor": "qwer",
-      "isDone": false,
-      "id": 46
+      "id": 7
     }
   ]
 }

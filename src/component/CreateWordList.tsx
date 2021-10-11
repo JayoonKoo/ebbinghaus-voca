@@ -76,21 +76,21 @@ const CreateWordList = () => {
 
   return (
     <>
-      <div>
-        <ul>
+      <div className="adding">
+        <ul className="adding__list">
           {addingWords.map((word) => (
-            <li key={word.id}>
-              <div>
-                <span>{word.day}</span>
-                <span>{word.eng}</span>
-                <span>{word.kor}</span>
+            <li className="adding__item" key={word.id}>
+              <div className="adding__item--word">
+                <span className="adding__day">{word.day}</span>
+                <span className="adding__eng">{word.eng}</span>
+                <span className="adding__kor">{word.kor}</span>
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <div>
-        <select value={day} onChange={onSelectChange}>
+      <div className="create-form">
+        <select value={day} onChange={onSelectChange} className="day-select">
           {days.map((mday) => (
             <option key={mday.id} value={mday.day}>
               {mday.day}
@@ -104,6 +104,7 @@ const CreateWordList = () => {
           onChange={inputChange}
           placeholder="단어를 입력하세요."
           required={true}
+					className="input-eng input"
         />
         <input
           value={kor}
@@ -112,12 +113,13 @@ const CreateWordList = () => {
           onChange={inputChange}
           placeholder="뜻을 입력하세요."
           required={true}
+					className="input-kor input"
         />
-        <button onClick={createWord}>추가하기</button>
+        <button onClick={createWord} className="add-btn btn">추가</button>
       </div>
 
       <form onSubmit={onSubmit}>
-        <input type="submit" value="생성하기" />
+        <input type="submit" value="생성하기" className="btn list-submit-btn"/>
       </form>
     </>
   );
