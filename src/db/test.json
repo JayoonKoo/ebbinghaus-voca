@@ -39,57 +39,83 @@
     {
       "day": 10,
       "id": 10
+    },
+    {
+      "day": 11,
+      "id": 11
+    },
+    {
+      "day": 12,
+      "id": 12
+    },
+    {
+      "day": 13,
+      "id": 13
     }
   ],
   "words": [
     {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": true
-    },
-    {
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": true,
-      "id": 2
-    },
-    {
-      "day": 1,
-      "eng": "mouse",
-      "kor": "쥐",
-      "isDone": false,
-      "id": 3
-    },
-    {
-      "day": 1,
-      "eng": "window",
-      "kor": "창문",
-      "isDone": false,
-      "id": 4
-    },
-    {
-      "day": 1,
-      "eng": "window",
-      "kor": "단어",
-      "isDone": false,
-      "id": 5
-    },
-    {
-      "day": 1,
-      "eng": "monkey",
-      "kor": "원숭이",
-      "isDone": false,
-      "id": 6
-    },
-    {
       "day": 4,
       "eng": "two ",
       "kor": "둘",
-      "isDone": false,
+      "isDone": true,
       "id": 7
+    },
+    {
+      "day": 4,
+      "eng": "window",
+      "kor": "창문",
+      "isDone": true,
+      "id": 8
+    },
+    {
+      "day": 11,
+      "eng": "english",
+      "kor": "영어",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": 11,
+      "eng": "good",
+      "kor": "좋아",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": 9,
+      "eng": "feature",
+      "kor": "특징",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": 13,
+      "eng": "english",
+      "kor": "영어",
+      "isDone": false,
+      "id": 14
+    },
+    {
+      "day": 1,
+      "eng": "english",
+      "kor": "영어",
+      "isDone": false,
+      "id": 15
+    },
+    {
+      "day": 2,
+      "eng": "english",
+      "kor": "영어",
+      "isDone": false,
+      "id": 16
+    },
+    {
+      "day": 3,
+      "eng": "english",
+      "kor": "영어",
+      "isDone": false,
+      "id": 17
     }
   ]
 }
